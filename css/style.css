@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:root {
+  --color1: #ff2626;
+  --color2: #bd1616;
+  --color3: #000000;
+  --color4: #ffe6e6;
+  --color5: #0e1e34;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--color2);
+  border-radius: 5rem;
+}
+body {
+  background-color: var(--color4);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar h1 {
+  font-size: 2.6rem;
+  color: white;
+  margin-left: 50px;
+}
+.navbar li {
+  margin: 0 25px;
+  padding: 10px;
+  color: white;
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 15px;
+}
+.navbar a :hover {
+  background-color: var(--color1);
+}
+.section01 {
+  background: url(../Images/hero1.jpg) no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+.hero {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 90vh;
+}
+.hero h2 {
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+}
+#text {
+  margin: auto 0;
+  padding: 40px;
+}
+.section02 {
+  background-color: var(--color4);
+}
+/* section 02  */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-color: white;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  box-shadow: 5px 5px 30px 1px var(--color3);
+}
+.cards {
+  width: auto;
+  padding: 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.cards i {
+  font-size: 70px;
+  color: var(--color2);
+}
+.cards h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+.heading {
+  text-align: center;
+  color: var(--color3);
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading span {
+  color: var(--color2);
+  text-transform: uppercase;
+}
+.about {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color5);
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row .image img {
+  width: 100%;
+  background-size: cover;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 15px;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.about .row .content p {
+  font-size: 1.6rem;
+  color: #eee;
+  padding: 0.5rem 0;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+.content p {
+  margin-bottom: 25px;
+}
+.btn {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: var(--color1);
+  margin-top: 25px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+.foot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 0;
+  background-color: var(--color5);
+  height: 100%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.left span {
+  color: var(--color2);
+}
+.left h1,
+p {
+  font-size: x-large;
+  color: var(--color4);
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.right .icons {
+  font-size: x-large;
+  color: var(--color4);
+  display: flex;
+  gap: 25px;
+}
+/* media queries */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .navbar {
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 1368px) {
+  .section01 {
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .section01 {
+    background-size: cover;
+    background-position: top;
+  }
+  .hero {
+    margin: auto 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 4.5rem;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar h1 {
+    margin-left: 0px;
+  }
+  .card-container {
+    flex-direction: column;
+    transform: translateY(-25%);
+    margin-bottom: 0;
+  }
+  .cards {
+    padding: 20px;
+  }
+  .cards i {
+    font-size: 50px;
+  }
+  .foot {
+    flex-wrap: wrap;
+  }
+}
